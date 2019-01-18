@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Subscriber List</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+</head>
+<body>
+	<h1>Welcome Subscriber!</h1>
+	<h3>Please Subscribe Below!</h3>
+	
+	<p>Please use the form below to subscribe</p>
+	<form action="#" th:action="@{/}" th:object="${subscriber}" method="post">
+	<table>
+		<tr>
+			<td>First Name: </td>
+			<td><input type="text" th:field="*{firstName}" /></td>
+		</tr>
+		<tr>
+			<td>Last Name: </td>
+			<td><input type="text" th:field="*{lastName}"/></td>
+		</tr>
+		<tr>
+			<td>Email: </td>
+			<td><input type="email" th:field="*{email}" /></td>
+			
+		</tr>
+		<tr>
+			<td>Username: </td>
+			<td><input type="text" th:field="*{userName}"/></td>
+		</tr>
+		<tr>
+			<td>Password:</td>
+			<td><input type="password" th:field="*{password}" /></td>
+		</tr>
+		<tr>
+			<td>Date of Birth:</td>
+			<td><input type="date" th:field="*{dateOfBirth}" /></td>
+		</tr>
+		<tr>
+	    <td><button type="submit">Submit Your Information</button></td>
+	</tr>
+	
+	</table>
+	
+	
+	</form>	
+
+
+</body>
+
+
+</html>

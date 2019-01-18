@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Subscriber List</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+</head>
+<body>
+	<h1>Welcome Subscriber!</h1>
+	<h3>Thank you for signing up! Here is the information I know about you:</h3>
+	
+	<p>First Name: <span th:text="${firstName}"></span></p>
+	<p>Last Name: <span th:text="${lastName}"></span></p>
+	<p>Email: <span th:text="${email}"></span></p>
+	<p>Username: <span th:text="${userName}"></span></p>
+	<p>Password: <span th:text="${password}"></span></p>
+	<p>Birthday: <span th:text="${dateOfBirth}"></span></p>
+</body>
+
+
+</html>
